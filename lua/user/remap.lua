@@ -58,6 +58,15 @@ map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "nvimtree toggle windo
 -- global lsp mappings
 map("n", "<leader>ds", vim.diagnostic.setloclist, { desc = "LSP diagnostic loclist" })
 
+-- debugger
+vim.keymap.set("n", "<leader>dd", "<cmd>VimspectorLaunch<CR>", { desc = "Debug: Launch" })
+vim.keymap.set("n", "<leader>de", "<cmd>VimspectorReset<CR>", { desc = "Debug: End" })
+vim.keymap.set("n", "<leader>db", "<cmd>VimspectorToggleBreakpoint<CR>", { desc = "Debug: Breakpoint" })
+vim.keymap.set("n", "<leader>dc", "<cmd>VimspectorContinue<CR>", { desc = "Debug: Continue" })
+vim.keymap.set("n", "<leader>di", "<cmd>VimspectorStepInto<CR>", { desc = "Debug: Step Into" })
+vim.keymap.set("n", "<leader>do", "<cmd>VimspectorStepOver<CR>", { desc = "Debug: Step Over" })
+
+
 -- lsp keybindings (on_attach)
 map("n", "gd", function()
 	vim.lsp.buf.definition()

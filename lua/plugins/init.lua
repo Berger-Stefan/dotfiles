@@ -2,6 +2,7 @@
 local lsp_config = require("plugins.lsp")
 local conform_config = require("plugins.conform")
 local ufo_config = require("plugins.ufo")
+local dap_config = require("plugins.dap")
 
 -- Combine all plugin specs
 local specs = {}
@@ -16,6 +17,10 @@ for _, spec in ipairs(conform_config) do
 end
 
 for _, spec in ipairs(ufo_config) do
+	table.insert(specs, spec)
+end
+
+for _, spec in ipairs(dap_config) do
 	table.insert(specs, spec)
 end
 
@@ -100,6 +105,9 @@ table.insert(specs, {
 	"nvim-treesitter/nvim-treesitter",
 	lazy = false,
 	build = ":TSUpdate",
+    config = function()
+        -- require'nvim-treesitter'.install { 'c', 'cpp' }
+    end
 })
 
 -- Leap
@@ -149,6 +157,35 @@ table.insert(specs, {
 	end,
 	config = function()
 		require("which-key").setup()
+	end,
+})
+
+-- DAP (Debug Adapter Protocol)
+table.insert(specs, {
+	"mfussenegger/nvim-dap",
+	dependencies = {
+		-- UI for DAP
+		"rcarriga/nvim-dap-ui",
+		"nvim-neotest/nvim-nio",
+		-- Virtual text support
+		"theHamsta/nvim-dap-virtual-text",
+		-- C/C++/Rust debugger
+		"julianolf/nvim-dap-lldb",
+		-- Python debugger
+		"mfussenegger/nvim-dap-python",
+	},
+	keys = {
+		{ "<F5>", function() require("dap").continue() end, desc = "Debug: Continue" },
+		{ "<F10>", function() require("dap").step_over() end, desc = "Debug: Step Over" },
+		{ "<F11>", function() require("dap").step_into() end, desc = "Debug: Step Into" },
+		{ "<F12>", function() require("dap").step_out() end, desc = "Debug: Step Out" },
+		{ "<leader>b", function() require("dap").toggle_breakpoint() end, desc = "Debug: Toggle Breakpoint" },
+		{ "<leader>dr", function() require("dap").repl.open() end, desc = "Debug: Open REPL" },
+		{ "<leader>dl", function() require("dap").run_last() end, desc = "Debug: Run Last" },
+		{ "<leader>du", function() require("dapui").toggle() end, desc = "Debug: Toggle UI" },
+	},
+	config = function()
+		require("plugins.dap")
 	end,
 })
 
