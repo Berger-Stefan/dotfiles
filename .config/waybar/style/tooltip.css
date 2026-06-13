@@ -1,0 +1,15 @@
+@import "colors.css";
+
+tooltip {
+  box-shadow: none;
+  border: none;
+  border-radius: 20px;
+}
+
+tooltip label {
+  background-color: @background;
+  color: @text;
+  padding: 6px 20px;
+}
+
+

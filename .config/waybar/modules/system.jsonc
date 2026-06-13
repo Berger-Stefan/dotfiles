@@ -1,0 +1,34 @@
+{
+  "temperature": {
+    "tooltip": false,
+    "interval": 10,
+    "thermal-zone": 4,
+    "critical-threshold": 80,
+    "format": "{icon} {temperatureC}°C",
+    "format-critical": "󱗗 {temperatureC}°C",
+    "format-icons": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "memory": {
+    "tooltip": false,
+    "interval": 15,
+    "format": " {used} GiB",
+    "states": {
+      "warning": 75,
+      "critical": 85
+    }
+  },
+  "cpu": {
+    "tooltip": false,
+    "interval": 10,
+    "format": " {usage}%",
+    "states": {
+      "warning": 75,
+      "critical": 90
+    }
+  }
+}
+

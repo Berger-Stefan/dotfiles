@@ -1,0 +1,49 @@
+{
+  "group/audio": {
+    "orientation": "horizontal",
+    "drawer": {
+      "transition-duration": 650,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "pulseaudio",
+      "pulseaudio/slider",
+      "custom/audio-select"
+    ]
+  },
+  "group/connections": {
+    "orientation": "horizontal",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "network",
+      "bluetooth"
+    ]
+  },
+  "group/power": {
+    "orientation": "horizontal",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "battery",
+      "backlight/slider",
+      "backlight"
+    ]
+  },
+  "group/system": {
+    "orientation": "horizontal",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-right-to-left": false
+    },
+    "modules": [
+      "temperature",
+      "memory",
+      "cpu"
+    ]
+  }
+}

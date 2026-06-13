@@ -1,0 +1,8 @@
+{
+  "custom/cpu-stats": {
+    "exec": "~/.config/waybar/cpu-stats.sh",
+    "return-type": "json",
+    "interval": 5,
+    "tooltip": true
+  }
+}

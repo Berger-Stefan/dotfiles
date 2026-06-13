@@ -1,0 +1,38 @@
+@import "colors.css";
+
+#custom-nvidia-gpu,
+#custom-cpu-stats,
+#custom-memory-stats {
+  margin: 3px 0;
+  padding: 5px 9px;
+  background-color: @container;
+  border: 1px solid @border;
+  color: @text;
+}
+
+#custom-cpu-stats {
+  margin-left: 5px;
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+}
+
+#custom-memory-stats {
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+
+#custom-nvidia-gpu {
+  margin-right: 5px;
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+}
+
+#temperature {
+  margin: 2px 2px;
+  padding: 3px 9px;
+  background-color: @container;
+  border: 1px solid @border;
+  border-radius: 8px;
+  color: @text;
+}

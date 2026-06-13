@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# NVIDIA proprietary driver hints for Hyprland.
+export XDG_SESSION_TYPE=wayland
+export GBM_BACKEND=nvidia-drm
+export __GLX_VENDOR_LIBRARY_NAME=nvidia
+export LIBVA_DRIVER_NAME=nvidia
+export WLR_NO_HARDWARE_CURSORS=1
+
+mkdir -p "$HOME/.cache"
+exec Hyprland > "$HOME/.cache/hyprland-nvidia.log" 2>&1

@@ -1,0 +1,52 @@
+@import "colors.css";
+
+#audio,
+#pulseaudio {
+  margin: 3px 5px;
+  padding: 5px 12px;
+  background-color: @container;
+  border: 1px solid @border;
+  border-radius: 8px;
+  color: @text;
+}
+
+#pulseaudio {
+  margin-right: 2px;
+  margin-left: 4px;
+}
+
+#custom-audio-select {
+  margin: 3px 5px 3px 0;
+  padding: 5px 9px;
+  background-color: @container;
+  border: 1px solid @border;
+  border-radius: 8px;
+  color: @accent-blue;
+}
+
+#pulseaudio-slider {
+  margin: 2px 4px;
+  padding: 0 2px;
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+#pulseaudio-slider trough {
+  min-height: 7px;
+  min-width: 80px;
+  border-radius: 10px;
+  background-color: @border;
+}
+
+#pulseaudio-slider highlight {
+  min-height: 7px;
+  border-radius: 10px;
+  background-color: @accent;
+}
+
+#pulseaudio-slider slider {
+  min-height: 8px;
+  min-width: 8px;
+  margin: -2px 0;
+  border-radius: 100%;
+}

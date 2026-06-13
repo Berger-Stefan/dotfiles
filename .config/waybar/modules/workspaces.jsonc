@@ -1,0 +1,25 @@
+{
+  "sway/workspaces": {
+    "on-click": "activate",
+    "format": "{icon} <span size='x-small'>{windows}</span>",
+    "format-window-separator": " ",
+    "window-rewrite-default": "·",
+    "window-rewrite": {
+      "class<firefox>": "",
+      "class<chromium|google-chrome>": "",
+      "class<kitty>": "",
+      "class<xfce4-terminal>": "",
+      "class<thunar>": "",
+      "class<code|codium|Code>": "",
+      "class<thunderbird>": "",
+      "class<TelegramDesktop|telegramdesktop>": "",
+      "class<steam>": "",
+      "class<vlc|mpv>": ""
+    },
+    "format-icons": {
+      "focused": "",
+      "urgent": "",
+      "default": ""
+    }
+  }
+}
