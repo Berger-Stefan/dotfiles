@@ -1,0 +1,47 @@
+@import "colors.css";
+
+#power {
+  margin: 2px 4px;
+  padding: 3px 14px;
+  background-color: @container;
+  border: 1px solid @border;
+  border-radius: 8px;
+  color: @text;
+}
+
+#backlight {
+  margin: 2px 3px;
+  padding: 0 6px 0 6px;
+}
+
+#battery {
+  padding: 0px 4px;
+}
+
+#backlight-slider {
+  margin: 2px 4px;
+  padding: 0 2px;
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+#backlight-slider trough {
+  min-height: 7px;
+  min-width: 80px;
+  border-radius: 10px;
+  background-color: @border;
+}
+
+#backlight-slider highlight {
+  min-height: 7px;
+  border-radius: 10px;
+  background-color: @accent;
+}
+
+#backlight-slider slider {
+  min-height: 8px;
+  min-width: 8px;
+  margin: -2px 0;
+  border-radius: 100%;
+}
+

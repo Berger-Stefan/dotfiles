@@ -1,0 +1,9 @@
+{
+  "custom/clipboard": {
+    "format": "",
+    "interval": 10,
+    "on-click": "cliphist list | rofi -dmenu -p Clipboard | cliphist decode | wl-copy",
+    "on-click-right": "cliphist wipe && notify-send 'Clipboard' 'History cleared successfully!'",
+    "tooltip": true
+  }
+}

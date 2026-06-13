@@ -1,0 +1,8 @@
+{
+  "custom/nvidia-gpu": {
+    "exec": "~/.config/waybar/nvidia-gpu.sh",
+    "return-type": "json",
+    "interval": 5,
+    "tooltip": true
+  }
+}

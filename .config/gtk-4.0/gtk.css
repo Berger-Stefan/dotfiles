@@ -1,0 +1,41 @@
+@define-color theme_bg_color #171812;
+@define-color theme_fg_color #fcfcfa;
+@define-color theme_base_color #1e1f1c;
+@define-color theme_text_color #fcfcfa;
+@define-color theme_selected_bg_color #3e3d32;
+@define-color theme_selected_fg_color #fcfcfa;
+@define-color accent_color #a9dc76;
+
+window,
+dialog,
+popover,
+menu,
+.background {
+    background-color: #171812;
+    color: #fcfcfa;
+}
+
+entry,
+textview,
+textview text,
+treeview {
+    background-color: #1e1f1c;
+    color: #fcfcfa;
+}
+
+button {
+    background: #272822;
+    border-color: #726d76;
+    color: #fcfcfa;
+}
+
+button:hover {
+    background: #3e3d32;
+    border-color: #a9dc76;
+}
+
+selection,
+*:selected {
+    background-color: #3e3d32;
+    color: #fcfcfa;
+}

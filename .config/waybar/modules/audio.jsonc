@@ -1,0 +1,25 @@
+{
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "scroll-step": 5,
+    "format-muted": "",
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "format-icons": {
+      "headphone": "",
+      "headset": "",
+      "default": ["", "", " "]
+    }
+  },
+  "pulseaudio/slider": {
+    "orientation": "horizontal",
+    "interval": 10
+  },
+  "custom/audio-select": {
+    "format": "",
+    "tooltip": true,
+    "tooltip-format": "Audio devices\nLeft: select output/input\nRight: mixer",
+    "on-click": "~/.config/waybar/audio-select.sh",
+    "on-click-right": "pavucontrol",
+    "interval": "once"
+  }
+}

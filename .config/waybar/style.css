@@ -1,0 +1,57 @@
+@import "style/colors.css";
+@import "style/workspaces.css";
+@import "style/audio.css";
+@import "style/connections.css";
+@import "style/power.css";
+@import "style/system.css";
+@import "style/tooltip.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  min-height: 0px;
+  border: none;
+  border-radius: 0;
+  font-size: 12px;
+  font-family: "JetBrainsMono Nerd Font", "JetBrains Mono", "Inter", "Noto Sans";
+}
+
+window#waybar {
+  background: @background;
+  border-bottom: 1px solid @border;
+}
+
+#custom-distro,
+#clock,
+#power-profiles-daemon,
+#mpris,
+#tray,
+#custom-clipboard,
+#custom-power-menu {
+  margin: 3px 5px;
+  padding: 5px 14px;
+  background-color: @container;
+  border: 1px solid @border;
+  border-radius: 8px;
+  color: @text;
+}
+
+#custom-power-menu {
+  color: @accent-pink;
+}
+
+#custom-distro {
+  color: @accent;
+}
+
+#clock {
+  color: @accent-blue;
+}
+
+#tray.empty {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    min-width: 0;
+}

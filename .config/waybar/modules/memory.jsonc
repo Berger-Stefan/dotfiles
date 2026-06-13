@@ -1,0 +1,8 @@
+{
+  "custom/memory-stats": {
+    "exec": "~/.config/waybar/memory-stats.sh",
+    "return-type": "json",
+    "interval": 5,
+    "tooltip": true
+  }
+}

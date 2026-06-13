@@ -1,0 +1,28 @@
+{
+  "backlight": {
+    "format": "󰃠  {percent}%",
+    "on-scroll-up": "brightnessctl set +5%",
+    "on-scroll-down": "brightnessctl set 5%-"
+  },
+  "backlight/slider": {
+    "orientation": "horizontal",
+    "interval": 5
+  },
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-discharging": "{icon} {capacity}%",
+    "format-charging": "{icon} {capacity}%",
+    "format-full": "󰂅",
+    "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
+    "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
+    "interval": 5,
+    "states": {
+      "warning": 15,
+      "critical": 10
+    },
+    "format-icons": {
+      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    }
+  }
+}

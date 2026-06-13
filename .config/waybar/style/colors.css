@@ -1,0 +1,12 @@
+@define-color background rgba(23, 24, 18, 0.9);
+@define-color container rgba(30, 31, 28, 0.96);
+@define-color container-hover rgba(62, 61, 50, 0.96);
+@define-color border rgba(114, 109, 118, 0.76);
+@define-color text #fcfcfa;
+@define-color muted #c1bec5;
+@define-color accent #a9dc76;
+@define-color accent-blue #78dce8;
+@define-color accent-pink #ff6188;
+@define-color accent-orange #fc9867;
+@define-color workspace-inactive rgba(74, 72, 62, 0.62);
+@define-color workspace-active #a9dc76;
