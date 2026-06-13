@@ -23,6 +23,12 @@ Included:
 
 ## Install
 
+Required font packages on Arch/EndeavourOS:
+
+```sh
+sudo pacman -S --needed ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols
+```
+
 Clone and run the installer:
 
 ```sh
@@ -41,4 +47,3 @@ are moved to `~/.dotfiles-backup-YYYYMMDD-HHMMSS` before linking.
 - Neovim now lives under `.config/nvim` in this all-in-one layout.
 - The repository currently uses the existing `Berger-Stefan/nvim` remote. If
   you rename it to `dotfiles` on GitHub, update the clone URL above.
-
