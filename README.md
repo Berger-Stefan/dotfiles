@@ -32,7 +32,7 @@ sudo pacman -S --needed ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols
 Clone and run the installer:
 
 ```sh
-git clone https://github.com/Berger-Stefan/nvim.git ~/dotfiles
+git clone https://github.com/Berger-Stefan/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ./install.sh --dry-run
 ./install.sh
@@ -45,5 +45,3 @@ are moved to `~/.dotfiles-backup-YYYYMMDD-HHMMSS` before linking.
 
 - Dated backup files from the workstation are intentionally not tracked.
 - Neovim now lives under `.config/nvim` in this all-in-one layout.
-- The repository currently uses the existing `Berger-Stefan/nvim` remote. If
-  you rename it to `dotfiles` on GitHub, update the clone URL above.
