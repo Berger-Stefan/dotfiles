@@ -40,9 +40,9 @@ link_file() {
 
 find "$repo_dir" -type f \
   ! -path "$repo_dir/.git/*" \
-  ! -name install.sh \
-  ! -name README.md \
-  ! -name .gitignore \
+  ! -path "$repo_dir/install.sh" \
+  ! -path "$repo_dir/README.md" \
+  ! -path "$repo_dir/.gitignore" \
   | while IFS= read -r file; do
     rel_path=${file#"$repo_dir/"}
     link_file "$rel_path"
