@@ -2,11 +2,13 @@
 
 set $mod Mod4
 set $term_xfce xfce4-terminal --disable-server --color-bg=#171812 --color-text=#fcfcfa
-set $term_kitty kitty
-set $term $term_xfce
+set $term_kitty /home/stefan/.local/bin/kitty
+set $term $term_kitty
 set $menu rofi -show drun
 
-output * resolution 5120x2160@165Hz scale 1.25
+output eDP-1 resolution 1920x1080@60.010Hz position 1088 1728 scale 1.0
+output DP-1 resolution 5120x2160@60.021Hz position 0 0 scale 1.25
+output * bg #000000 solid_color
 
 input type:keyboard {
     xkb_layout de
@@ -15,10 +17,10 @@ input type:keyboard {
 
 input type:touchpad {
     tap enabled
-    natural_scroll disabled
+    natural_scroll enabled
 }
 
-font pango:JetBrainsMono Nerd Font 10
+font pango:JetBrainsMonoNL Nerd Font 10
 
 gaps inner 6
 gaps outer 3

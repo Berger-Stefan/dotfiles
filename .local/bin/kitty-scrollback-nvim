@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+tmp="$(mktemp --suffix=.kitty-scrollback.txt)"
+trap 'rm -f "$tmp"' EXIT
+
+perl -pe '
+  s/\e\][^\a]*(?:\a|\e\\)//g;       # OSC sequences, including shell integration markers
+  s/\e\[[0-?]*[ -\/]*[@-~]//g;      # CSI color/control sequences
+  s/\e[()][A-Za-z0-9]//g;           # Charset selection sequences
+' > "$tmp"
+
+exec /home/stefan/.local/bin/nvim -R \
+  -c "setlocal buftype=nofile bufhidden=wipe nobuflisted noswapfile nomodifiable" \
+  "$tmp"

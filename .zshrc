@@ -27,6 +27,8 @@ zcompdump_dir="${XDG_CACHE_HOME:-$HOME/.cache}/zsh"
 compinit -d "$zcompdump_dir/zcompdump"
 
 bindkey -e
+bindkey '^?' backward-delete-char
+bindkey '^[[3~' delete-char
 autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search

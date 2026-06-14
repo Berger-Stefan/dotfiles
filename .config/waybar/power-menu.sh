@@ -1,6 +1,6 @@
 #!/bin/sh
 
-choice="$(printf '%s\n' Logout Reboot Shutdown | rofi -dmenu -p Power)"
+choice="$(printf '%s\n' Logout Reboot Suspend | rofi -dmenu -p Power)"
 
 case "$choice" in
   Logout)
@@ -9,7 +9,7 @@ case "$choice" in
   Reboot)
     systemctl reboot
     ;;
-  Shutdown)
-    systemctl poweroff
+  Suspend)
+    systemctl suspend
     ;;
 esac

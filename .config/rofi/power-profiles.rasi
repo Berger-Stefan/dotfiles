@@ -3,7 +3,7 @@
  * Maintainer: joekamprad <joekamprad@endeavouros.com>
  *******************************************************/
 configuration {
-    font:                           "JetBrainsMono Nerd Font 10";
+    font:                           "JetBrainsMonoNL Nerd Font 10";
     show-icons:                     false;
     icon-theme:                     "Qogir-dark";
     scroll-method:                  0;
@@ -132,7 +132,7 @@ mainbox {
 }
 message {
     expand: false;
-    font: "JetBrainsMono Nerd Font 10";
+    font: "JetBrainsMonoNL Nerd Font 10";
     text-color: @normal-foreground;
     margin: 0 0 10px 0;
 }

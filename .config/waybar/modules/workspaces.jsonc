@@ -1,7 +1,7 @@
 {
   "sway/workspaces": {
     "on-click": "activate",
-    "format": "{icon} <span size='x-small'>{windows}</span>",
+    "format": "{name} {icon}",
     "format-window-separator": " ",
     "window-rewrite-default": "·",
     "window-rewrite": {
