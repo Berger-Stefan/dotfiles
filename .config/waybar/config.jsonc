@@ -13,6 +13,7 @@
     "/home/stefan/.config/waybar/modules/tray.jsonc",
     "/home/stefan/.config/waybar/modules/groups.jsonc",
     "/home/stefan/.config/waybar/modules/clipboard.jsonc",
+    "/home/stefan/.config/waybar/modules/screenshot.jsonc",
     "/home/stefan/.config/waybar/modules/audio.jsonc",
     "/home/stefan/.config/waybar/modules/connections.jsonc",
     "/home/stefan/.config/waybar/modules/power.jsonc",
@@ -25,5 +26,5 @@
 
   "modules-left": ["custom/distro", "sway/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["mpris", "tray", "custom/clipboard", "pulseaudio", "custom/audio-select", "network", "custom/cpu-stats", "custom/memory-stats", "custom/battery", "custom/power-menu"],
+  "modules-right": ["mpris", "tray", "custom/clipboard", "custom/screenshot", "pulseaudio", "custom/audio-select", "network", "custom/cpu-stats", "custom/memory-stats", "custom/battery", "custom/power-menu"],
 }

@@ -1,0 +1,9 @@
+{
+  "custom/screenshot": {
+    "format": "",
+    "tooltip": true,
+    "tooltip-format": "Select screenshot region",
+    "on-click": "~/.config/waybar/screenshot-region.sh"
+  }
+}
+

@@ -27,6 +27,7 @@ window#waybar {
 #mpris,
 #tray,
 #custom-clipboard,
+#custom-screenshot,
 #custom-power-menu {
   margin: 3px 5px;
   padding: 5px 14px;
@@ -42,6 +43,10 @@ window#waybar {
 
 #custom-distro {
   color: @accent;
+}
+
+#custom-screenshot {
+  color: @accent-blue;
 }
 
 #clock {
